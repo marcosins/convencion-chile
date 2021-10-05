@@ -19,7 +19,6 @@ Luego elige de acuerdo a lo que quieras obtener
 | CSV            | `npm run csv`   |
 | JSON           | `npm run json`  |
 
-`node`
 
 ## Formato CSV
 
