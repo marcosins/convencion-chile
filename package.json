@@ -12,7 +12,7 @@
   "main": "src/index.js",
   "scripts": {
     "print": "npm run get-html && node .",
-    "csv": "npm run get-html && node . > convencionales.csv",
+    "csv": "npm run get-html && node . csv> convencionales.csv",
     "json": "npm run get-html && node . json > convencionales.json",
     "text": "npm run get-html && node . text > convencionales.txt",
     "get-html": "sh curl.sh",
