@@ -4,9 +4,9 @@ const { toCSV, toJSON, toTEXT } = require('./convencional-transform');
 /**
  *
  * @param {NodeListOf<ChildNode>} body HTML del cuerpo de la página
- * @returns Objeto con nombre, apellido, distrto, correo y redes sociales (si tiene)
+ * @returns Objeto ordenado con data de cada convencional
  */
-function extractPersonalInfo({ childNodes }) {
+function extractFromHTML({ childNodes }) {
   const body = childNodes[3];
   const footer = childNodes[5];
 
@@ -21,13 +21,13 @@ function extractPersonalInfo({ childNodes }) {
 /**
  * Obtiene la información personal de cada convencional, en el formato solicitado, desde la página web
  * @param {HTMLElement} HTMLDocument Documento HTML desde la página de la convención
- * @param {string} format Formatos: `CSV`, `JSON`
+ * @param {string} format Formatos: `CSV`, `JSON` y `TEXT` (por defecto)
  * @returns Información de los convencionales en el formato solicitado
  */
 function getConvencionales(HTMLDocument, format = DEFAULT_FORMAT) {
   const selector = '#convencionales .modal-content';
   const convencionalesNodes = HTMLDocument.querySelectorAll(selector);
-  const convencionales = convencionalesNodes.map(extractPersonalInfo);
+  const convencionales = convencionalesNodes.map(extractFromHTML);
 
   switch (format) {
     case 'CSV':
