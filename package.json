@@ -7,7 +7,9 @@
   "keywords": [
     "chile",
     "convencion",
-    "constitucion"
+    "constitucion",
+    "html",
+    "parser"
   ],
   "main": "src/index.js",
   "scripts": {
