@@ -1,3 +1,6 @@
+<img src="https://www.chileconvencion.cl/wp-content/themes/convencionconstitucional/assets/images/logo_cc.svg">
+
+---
 # 🇨🇱 CONVENCIONALES CONSTITUYENTES 🇨🇱
 
 Pequeño script que parsea la página de la [Convención Constitucional](https://www.chileconvencion.cl/convencionales) para obtener información de cada uno de los 155 convencionales la conforman.
