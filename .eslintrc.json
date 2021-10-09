@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "mocha": true
+  },
+  "extends": [
+    "standard"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "no-console": "error",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "multiline-ternary": [
+      "error",
+      "never"
+    ],
+    "no-nested-ternary": "error"
+  }
+}

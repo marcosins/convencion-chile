@@ -9,11 +9,12 @@
     "convencion",
     "constitucion"
   ],
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "print": "npm run get-html && node .",
     "csv": "npm run get-html && node . > convencionales.csv",
     "json": "npm run get-html && node . json > convencionales.json",
+    "text": "npm run get-html && node . text > convencionales.txt",
     "get-html": "sh curl.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,8 +22,6 @@
     "node-html-parser": "^4.1.5"
   },
   "devDependencies": {
-    "chai": "^4.3.4",
-    "eslint": "^7.32.0",
-    "mocha": "^9.1.2"
+    "eslint": "^7.32.0"
   }
 }
