@@ -8,7 +8,7 @@ Pequeño script que parsea la página de la [Convención Constitucional](https:/
 - `curl`
 - `node` y `npm`
 
-Si no quieres usar `curl` puedes bajar manualmente [chileconvencion.cl/convencionales](https://www.chileconvencion.cl/convencionales) y guardarla como cc.html en la raíz del proyecto.
+Si no quieres usar `curl` puedes bajar manualmente [chileconvencion.cl/convencionales](https://www.chileconvencion.cl/convencionales) y guardarla como `cc.html` en la raíz del proyecto.
 
 ## ¿Como usar?
 
