@@ -30,7 +30,7 @@ function convencionalToTEXT(convencional) {
  * @returns Informacion separada por comas. 1 linea por convencional
  */
 function toCSV(convencionales) {
-  return convencionales.reduce(concat(convencionalToCSV));
+  return convencionales.reduce(concat(convencionalToCSV), '');
 };
 
 /**
@@ -48,7 +48,7 @@ function toJSON(convencionales) {
  * @returns Informacion de los convencionales
  */
 function toTEXT(convencionales) {
-  return convencionales.reduce(concat(convencionalToTEXT));
+  return convencionales.reduce(concat(convencionalToTEXT), '');
 }
 
 module.exports = {
