@@ -1,7 +1,7 @@
 const { readFile } = require('fs');
 const { parse } = require('node-html-parser');
 const { FILE_IN } = require('./config');
-const { getConvencionales } = require('./utils/convencion-parser.js');
+const { getConvencionales } = require('./utils/convencion-parser');
 
 const FORMAT = process.argv?.[2]?.toUpperCase();
 
